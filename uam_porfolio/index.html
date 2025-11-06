@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accueil - Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-titre">
+      <img src="images/logo-uamm.png" alt="Logo UAMM" class="logo" />
+      <h1>Mon Portfolio</h1>
+    </div>
+    <button id="themeToggle">🌙</button>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="fullscreen-slider">
+      <div class="slider">
+        <img src="slider/img1.jpg" alt="Image 1" class="slide active">
+        <img src="slider/img2.jpg" alt="Image 2" class="slide">
+        <img src="slider/img3.jpg" alt="Image 3" class="slide">
+        <img src="slider/img4.jpg" alt="Image 4" class="slide">
+        <img src="slider/img5.jpg" alt="Image 5" class="slide">
+      </div>
+    </section>
+
+    <section id="a-propos">
+      <h2>À propos</h2>
+      <p>Développeur web passionné, je crée des expériences numériques modernes, responsives et performantes. Formé à l’UAMM, je maîtrise HTML, CSS, JS, et les frameworks front-end.</p>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="icons/html5.svg" alt="HTML5"><p>HTML5</p></div>
+        <div class="skill"><img src="icons/css3.svg" alt="CSS3"><p>CSS3</p></div>
+        <div class="skill"><img src="icons/js.svg" alt="JS"><p>JavaScript</p></div>
+        <div class="skill"><img src="icons/responsive.svg" alt="Responsive"><p>Responsive</p></div>
+      </div>
+    </section>
+
+    <section id="temoignages">
+      <h2>Témoignages</h2>
+      <div class="testimonial">
+        <blockquote>“Un développeur sérieux et impliqué.”</blockquote>
+        <p>— Mme Fall, formatrice</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Développement Web par Youssoupha LAM</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a>
+    </div>
+    <a href="#accueil" class="back-to-top">↑ Haut</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

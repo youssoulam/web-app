@@ -1,0 +1,24 @@
+name: Déploiement local avec runner self-hosted
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v3
+
+      - name: Construire et lancer le conteneur Docker localement
+        run: |
+          echo "Suppression du conteneur existant s’il existe..."
+          docker rm -f uam-nginx-app || true
+
+          echo "Construction de l'image Docker"
+          docker build -t uam-nginx-app .
+
+          echo "Lancement du conteneur sur le port 30081"
+          docker run -d --name uam-nginx-app -p 30081:80 uam-nginx-app
